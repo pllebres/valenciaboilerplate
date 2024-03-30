@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700&display=swap">
+    <script src="https://kit.fontawesome.com/16b380b602.js" crossorigin="anonymous"></script>
+
+
+    <title>Visita Valencia</title>
+  </head>
+  <body><div class="container">
+    <include src="./views/header.html"></include>
+
+    <div class="container__hero" id="hero">
+        <div class="container__hero__text">
+            <h1>Bienvenido/a a Valencia</h1>
+        </div>
+    </div>
+
+    <div class="container__row__text">
+       
+            <form class="form" action="#" method="post">
+              <h3 class="form__heading">Para estar al día, suscríbete a nuestra newsletter, suscríbete a la newsletter</h3>
+                <div class="form__field">
+                    <label for="username" class="form__label">Nombre:</label>
+                    <input type="text" id="username" class="form__input" name="username" required>
+                </div>
+                <div class="form__field">
+                    <label for="email" class="form__label">Email:</label>
+                    <input type="email" id="email" class="form__input" name="email" required>
+                </div>
+          
+                <input type="checkbox" name="politica" id="politica" required="">  <label for="politica">He leído y acepto la política de privacidad</label>
+                  
+                <div class="form__datos">    INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE Turismo Valencia.
+
+                  Finalidades: Recopilación de datos para el envío de noticias y promociones turísticas.
+                  
+                  Legitimación: Consentimiento del interesado.
+                  
+                  Destinatarios: No se realizarán transferencias de datos a terceros, excepto en casos de obligación legal.
+                  
+                  Derechos: Puede retirar su consentimiento en cualquier momento, así como acceder, rectificar o eliminar sus datos y ejercer otros derechos contactando con nosotros a través de info@turismovalencia.com.
+                  
+                  Información Adicional: Puede obtener más detalles consultando nuestro <a href="#" class="link">Aviso Legal </a> y  <a href="#" class="link">APolítica de Privacidad</a>.  </div>
+                  <div class="form__field">
+                    <button type="submit" class="container__button">Registro <i class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+                
+            </form>
+    </div>
+
+
+  </div>
+
+    <div class="container__row impar" id="container__row__uno">
+        <figure class="container__row__image">
+            <img src="./assets/images/cultura.jpg" alt="puerta" class="container__row__image-img">
+            <figcaption class="container__row__image-caption">© Jesús Esteban San José en Unsplash</figcaption>
+        </figure>
+
+        <div class="container__row__text">
+            <h2>Un paseo por sus calles</h2>
+            <p>Descubre los barrios más antiguos y vibrantes de Valencia, donde la historia se entrelaza con la modernidad en un mosaico cultural. Desde las estrechas calles empedradas de El Carmen hasta la bulliciosa vida urbana de Ruzafa, o los pintorescos paseos marítimos de Malvarrosa.</p>
+            <button type="submit" class="container__button">Cuéntame más <i class="fa-solid fa-arrow-right-long"></i></button>
+        </div>
+    </div>
+
+    <div class="container__row par" id="container__row__dos">
+        <div class="container__row__text">
+            <h2>Innovación: Arte y ciencia</h2>
+            <p>Déjate llevar por la fascinante fusión entre la tradición y la modernidad, mientras exploras museos de arte contemporáneo, participas en experimentos científicos interactivos y te sumerges en la efervescente escena cultural que caracteriza a esta ciudad mediterránea.</p>
+            <button type="submit" class="container__button">Cuéntame más  <i class="fa-solid fa-arrow-right-long"></i></button>
+        </div>
+        <figure class="container__row__image">
+            <img src="./assets/images/Innovacion.jpg" alt="ciudad artes y las ciencias" class="container__row__image-img">
+            <figcaption class="container__row__image-caption">© @julia.gnclvz en pexels</figcaption>
+        </figure>
+    </div>
+
+    <div class="container__row impar" id="container__row__tres">
+        <figure class="container__row__image">
+            <img src="./assets/images/fallas.jpg" alt="fallas" class="container__row__image-img">
+            <figcaption class="container__row__image-caption">© @julia.gnclvz en pexels</figcaption>
+        </figure>
+        <div class="container__row__text">
+            <h2>Arte e historia</h2>
+            <p>Las Fallas de Valencia se celebran en marzo como despedida del invierno, constituyendo una fiesta de luz, música en las calles y olor a pólvora. Durante esta festividad, se despliega un estallido de color gracias al arte textil tradicional de la vestimenta valenciana y a los satíricos ninots que se exponen en las calles.</p>
+            <button type="submit" class="container__button">Cuéntame más <i class="fa-solid fa-arrow-right-long"></i></button>
+        </div>
+    </div>
+
+    <div class="container__row par" id="container__row__cuatro">
+        <div class="container__row__text">
+            <h2>El arroz y la albufera</h2>
+            <p>Desde tiempos inmemoriales, el arroz ha sido un ingrediente fundamental en la gastronomía valenciana, dando vida a platos emblemáticos como la paella. Pero su historia va más allá de un simple grano; es un símbolo de identidad arraigado en las tierras fértiles que rodean la Albufera, un tesoro natural que ha alimentado a generaciones con su exquisita diversidad de arroces.</p>
+            <button type="submit" class="container__button">Cuéntame más <i class="fa-solid fa-arrow-right-long"></i></button>
+        </div>
+        <figure class="container__row__image">
+            <img src="./assets/images/paella-gastronomia.jpg" alt="ciudad artes y las ciencias" class="container__row__image-img">
+            <figcaption class="container__row__image-caption">© @julia.gnclvz en pexels</figcaption>
+        </figure>
+    </div>
+  
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  </body>
+</html>

@@ -1,0 +1,105 @@
+/**
+ * Aqui sólo los estilos que aparecen en la página home
+ */
+
+
+
+
+.container__hero {
+  background-image: url(../images/hero.jpg);
+  height: 45rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: left;
+
+  &__text {
+    width: 40rem;
+    padding-top: 16%;
+    padding-left: 16%;
+  }
+
+   // Media query para móviles
+   @media screen and (max-width: 768px) {
+    height: 23rem;
+    background-position: top center; // O cualquier otro ajuste que necesites
+
+    &__text {
+      padding-left: 10%; // Reduce el padding lateral para ajustarse a pantallas más pequeñas
+      width: 100%; // Hace que el texto ocupe todo el ancho disponible
+      padding-top: 50%; // Ajusta el padding superior
+    }
+  }
+}
+
+
+.container__row {
+  min-height: 15rem;
+  display: flex;
+  flex-direction: row; // Dirección por defecto para pantallas grandes
+  gap: 5vw;
+  background-color: #fff;
+  align-items: stretch;
+  min-height: fit-content;
+
+  &.impar {
+    background-color: $row-dos-bg-color; // Asegúrate de que esta variable esté definida correctamente en tu SCSS
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  &__image {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+
+    &-img {
+      width: 100%;
+      filter: grayscale(100%);
+      transition: .3s ease-in-out;
+      display: block;
+      object-fit: cover;
+
+      &:hover {
+        transform: scale(1.3);
+        filter: none;
+      }
+    }
+
+    &-caption {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      padding: 0.5rem;
+      background-color: rgba($uoc-masterbrand, 0.8); // Asegúrate de que esta variable RGB está definida correctamente
+      font-size: 0.8rem;
+    }
+  }
+
+  // Media query para dispositivos móviles
+  @media screen and (max-width: 768px) { 
+    flex-direction: column; 
+
+    &.par {
+      flex-direction: column-reverse; // Cambiar el orden en dispositivos móviles
+    }
+
+    &__image, &__text {
+      width: 100%; 
+    }
+
+  
+  }
+}
+
+
+
+

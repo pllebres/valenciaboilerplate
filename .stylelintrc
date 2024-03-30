@@ -1,0 +1,50 @@
+
+
+{
+    "extends": [
+      "stylelint-config-recommended-scss",
+      "stylelint-config-recess-order"
+    ],
+    "plugins": [
+      "stylelint-selector-bem-pattern"
+    ],
+    "rules": {
+      "color-no-invalid-hex": true,
+      "font-family-no-duplicate-names": true,
+      "declaration-block-no-duplicate-properties": true,
+      "block-no-empty": true,
+      "selector-list-comma-newline-after": "always-multi-line",
+      "selector-list-comma-newline-before": "never-multi-line",
+      "block-opening-brace-newline-before": "always-multi-line",
+      "block-closing-brace-newline-after": "always-multi-line",
+      "unit-allowed-list": ["px", "em", "rem", "vw", "vh", "%"],
+      "indentation": 2,
+      "order/properties-order": [
+        "display",
+        "position",
+        "top",
+        "right",
+        "bottom",
+        "left",
+        "float",
+        "clear",
+        "z-index",
+        "width",
+        "height",
+        "margin",
+        "padding",
+        "border",
+        "border-radius",
+        "background",
+        "color",
+        "font",
+        "text",
+        "line-height",
+        // Agrega el resto de las propiedades aquí
+      ],      
+      "plugin/selector-bem-pattern": {
+        "preset": "bem"
+      }
+    }
+  }
+  

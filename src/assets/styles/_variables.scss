@@ -1,0 +1,35 @@
+
+
+/**
+ * Use this file to import partials.
+ * Do not include SCSS code in this file.
+ */
+
+@use "sass:color";
+
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
+$font-family-serif: "Georgia", "Times New Roman", serif;
+
+$uoc-corporate: #535357;
+$uoc-masterbrand: #ffffff;
+$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
+$primary-color: #070707;
+$secondary-color: #41C9E2;
+$accent-color: #D35B4A;
+$body-bg-color: #F7EEDD;
+$bg-color: #ffffff; // Define el color de fondo como blanco
+
+
+
+
+$row-dos-bg-color: #ACE2E1;
+$row-tres-bg-color: #41C9E2;
+$row-cuatro-bg-color: #F7EEDD;
+
+
+$mqMinWidth: 420px;
+
+
+
