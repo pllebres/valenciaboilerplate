@@ -17,7 +17,7 @@
       "selector-list-comma-newline-before": "never-multi-line",
       "block-opening-brace-newline-before": "always-multi-line",
       "block-closing-brace-newline-after": "always-multi-line",
-      "unit-allowed-list": ["px", "em", "rem", "vw", "vh", "%"],
+      "unit-allowed-list": ["px", "em", "rem", "vw", "vh", "s", "ms","%"],
       "indentation": 2,
       "order/properties-order": [
         "display",

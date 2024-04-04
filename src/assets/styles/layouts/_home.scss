@@ -1,31 +1,31 @@
 /**
  * Aqui sólo los estilos que aparecen en la página home
  */
-
-
-
-
-.container__hero {
+.container__hero 
+{
   background-image: url(../images/hero.jpg);
+  display: flex;
   height: 45rem;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
   justify-content: left;
 
-  &__text {
+  &__text 
+  {
     width: 40rem;
     padding-top: 16%;
     padding-left: 16%;
   }
 
    // Media query para móviles
-   @media screen and (max-width: 768px) {
+   @media screen and (max-width: 768px) 
+   {
     height: 23rem;
     background-position: top center; // O cualquier otro ajuste que necesites
 
-    &__text {
+    &__text 
+    {
       padding-left: 10%; // Reduce el padding lateral para ajustarse a pantallas más pequeñas
       width: 100%; // Hace que el texto ocupe todo el ancho disponible
       padding-top: 50%; // Ajusta el padding superior
@@ -34,8 +34,8 @@
 }
 
 
-.container__row {
-  min-height: 15rem;
+.container__row 
+{
   display: flex;
   flex-direction: row; // Dirección por defecto para pantallas grandes
   gap: 5vw;
@@ -43,11 +43,13 @@
   align-items: stretch;
   min-height: fit-content;
 
-  &.impar {
+  &.impar 
+  {
     background-color: $row-dos-bg-color; // Asegúrate de que esta variable esté definida correctamente en tu SCSS
   }
 
-  &__text {
+  &__text 
+  {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,29 +57,33 @@
     padding-right: 5%;
   }
 
-  &__image {
-    position: relative;
+  &__image 
+  {
     display: flex;
+    position: relative;
     overflow: hidden;
     height: 100%;
 
-    &-img {
+    &-img 
+    {
+      display: block;
       width: 100%;
       filter: grayscale(100%);
       transition: .3s ease-in-out;
-      display: block;
       object-fit: cover;
 
-      &:hover {
+      &:hover 
+      {
         transform: scale(1.3);
         filter: none;
       }
     }
 
-    &-caption {
+    &-caption 
+    {
       position: absolute;
-      left: 0;
       bottom: 0;
+      left: 0;
       padding: 0.5rem;
       background-color: rgba($uoc-masterbrand, 0.8); // Asegúrate de que esta variable RGB está definida correctamente
       font-size: 0.8rem;
@@ -85,14 +91,18 @@
   }
 
   // Media query para dispositivos móviles
-  @media screen and (max-width: 768px) { 
+  @media screen and (max-width: 768px) 
+  { 
     flex-direction: column; 
 
-    &.par {
+    &.par 
+    {
       flex-direction: column-reverse; // Cambiar el orden en dispositivos móviles
     }
 
-    &__image, &__text {
+    &__image,
+     &__text
+     {
       width: 100%; 
     }
 
@@ -101,5 +111,14 @@
 }
 
 
+
+
+.my-element {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
 
 

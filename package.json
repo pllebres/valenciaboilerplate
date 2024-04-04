@@ -43,6 +43,7 @@
     "postcss-preset-env": "^9.1.1",
     "posthtml-include": "^1.7.4",
     "rimraf": "^5.0.1",
+    "sass": "^1.74.1",
     "sharp": "^0.33.3",
     "stylelint": "^16.3.0",
     "stylelint-config-recess-order": "^5.0.0",
@@ -50,6 +51,7 @@
     "stylelint-selector-bem-pattern": "^4.0.0"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.5.1"
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "animate.css": "^4.1.1"
   }
 }
